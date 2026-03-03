@@ -41,20 +41,20 @@ export default function HomeSection() {
         </svg>
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6 pb-16 pt-28 lg:px-8 lg:pt-36">
+      <div className="relative mx-auto max-w-7xl px-6 pb-16 pt-32 lg:px-8 lg:pt-46">
         <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
           {/* Left */}
           <div>
             <h1
               ref={titleRef}
-              className="mt-3 text-4xl font-display font-semibold leading-tight text-foreground sm:text-5xl lg:text-6xl"
+              className="mt-3 font-display font-semibold leading-18 text-foreground sm:text-5xl lg:text-6xl"
             >
               Réussis tes examens et devoirs avec
               <span className="block text-primary"> DocStore. </span>
             </h1>
             <p
               ref={subtitleRef}
-              className="mt-4 max-w-xl text-base text-muted-foreground sm:text-lg"
+              className="mt-8 max-w-xl leading-12 lg:text-2xl text-muted-foreground text-lg"
             >
               Tous tes supports académiques au même endroit : cours, TD,
               examens, concours et documents PDF, accessibles rapidement sur
@@ -63,7 +63,7 @@ export default function HomeSection() {
 
             <div
               ref={buttonRef}
-              className="mt-8 flex flex-wrap items-center gap-4"
+              className="mt-12 flex flex-wrap items-center gap-4"
             >
               <a
                 href="https://docstore-univ.vercel.app/"
@@ -103,7 +103,7 @@ export default function HomeSection() {
               </a>
             </div>
 
-            <div className="mt-10 flex items-center gap-4 text-sm text-muted-foreground">
+            <div className="mt-6 mb-4 flex items-center gap-4 text-sm text-muted-foreground">
               <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-primary font-semibold">
                 4.9
               </span>
@@ -121,7 +121,7 @@ export default function HomeSection() {
               alt="Aperçu de l'application DocStore"
               width={520}
               height={520}
-              className="h-auto w-75 max-w-full sm:w-90 lg:w-105"
+              className="h-auto w-75 max-w-full sm:w-90 lg:w-205"
               priority
             />
           </div>

@@ -5,8 +5,6 @@ export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-footer-white text-black">
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -left-32 top-16 h-56 w-56 rounded-full bg-blue-600/30 blur-sm" />
-        <div className="absolute right-10 top-10 h-64 w-64 rounded-full bg-blue-400/20 blur-xs" />
         <div className="absolute right-0 top-0 h-48 w-48 rounded-b-[120px] bg-blue-700/40" />
       </div>
 

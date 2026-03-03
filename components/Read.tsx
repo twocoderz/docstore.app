@@ -95,16 +95,6 @@ export default function Read() {
       id="about"
       className="relative overflow-hidden bg-background py-20"
     >
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-8 top-12 h-40 w-40 rounded-full border-2 border-primary/10" />
-        <div className="absolute left-16 top-20 h-40 w-40 rounded-full border-2 border-accent/10" />
-        <div className="absolute left-24 top-28 h-40 w-40 rounded-full border-2 border-primary/10" />
-        <div className="absolute bottom-12 left-12 h-12 w-12 rounded-full bg-accent/20" />
-        <div className="absolute bottom-6 left-24 h-2 w-2 rounded-full bg-primary/40" />
-        <div className="absolute bottom-10 left-32 h-2 w-2 rounded-full bg-primary/40" />
-        <div className="absolute bottom-14 left-40 h-2 w-2 rounded-full bg-primary/40" />
-      </div>
-
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.1fr]">
           {/* Content */}

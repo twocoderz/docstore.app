@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-footer-gradient text-white">
+    <footer className="relative overflow-hidden bg-footer-white text-black">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -left-32 top-16 h-56 w-56 rounded-full bg-blue-600/30 blur-sm" />
         <div className="absolute right-10 top-10 h-64 w-64 rounded-full bg-blue-400/20 blur-xs" />
@@ -11,12 +12,12 @@ export default function Footer() {
 
       <div className="relative mx-auto max-w-7xl px-6 pb-14 pt-16 lg:px-8">
         {/* CTA Card */}
-        <div className="mx-auto max-w-4xl rounded-32 bg-cta-gradient px-8 py-12 text-center shadow-cta">
+        <div className="mx-auto max-w-4xl rounded-32 bg-primary px-8 py-12 text-center">
           <p className="text-sm font-semibold text-blue-100">Gagnez du temps</p>
-          <h2 className="mt-2 text-3xl font-display font-semibold text-white sm:text-4xl">
+          <h2 className="mt-2 text-6xl font-display font-semibold text-white sm:text-4xl">
             Téléchargez DocStore
           </h2>
-          <p className="mx-auto mt-3 max-w-2xl text-sm text-blue-100 sm:text-base">
+          <p className="mx-auto mt-3 max-w-4xl text-sm text-blue-100 sm:text-base">
             Valide toutes tes UEs avec Docstore.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -52,65 +53,48 @@ export default function Footer() {
         </div>
 
         {/* Footer content */}
-        <div className="mt-16 grid gap-10 lg:grid-cols-[1.2fr_1fr_1fr_1fr]">
+        <div className="mt-16 text-black-100 flex justify-between">
           <div>
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-lg font-semibold">
-                DS
-              </div>
-              <span className="text-xl font-semibold">DocStore</span>
+              {/* Logo */}
+              <Link href="/">
+                <Image
+                  src="/logo.svg"
+                  alt="DocStore"
+                  width={28}
+                  height={28}
+                  className="h-18 w-18"
+                  priority
+                />
+              </Link>
             </div>
-            <p className="mt-4 text-sm text-blue-100">
+            <p className="mt-4 text-sm text-left max-w-100 text-black-100">
               Get the future you want. DocStore vous aide à organiser vos
               documents pour travailler plus vite, ensemble.
             </p>
           </div>
 
           <div>
-            <p className="text-sm font-semibold">Produits</p>
-            <ul className="mt-4 space-y-3 text-sm text-blue-100">
-              <li>Features</li>
-              <li>Templates</li>
-              <li>Pricing</li>
-              <li>Security</li>
+            <p className="text-sm font-semibold">Liens rapides</p>
+            <ul className="mt-4 space-y-3 text-sm text-blue-600">
+              <li>Acceuil</li>
+              <li>Fonctionnalites</li>
+              <li>Comment ca marche</li>
+              <li>Ce que disent les utilisateurs</li>
             </ul>
-          </div>
-
-          <div>
-            <p className="text-sm font-semibold">Entreprise</p>
-            <ul className="mt-4 space-y-3 text-sm text-blue-100">
-              <li>About Us</li>
-              <li>Press & Media</li>
-              <li>Careers</li>
-              <li>Ambassadors</li>
-            </ul>
-          </div>
-
-          <div>
-            <p className="text-sm font-semibold">Support</p>
-            <ul className="mt-4 space-y-3 text-sm text-blue-100">
-              <li>FAQ</li>
-              <li>Terms & Conditions</li>
-              <li>Privacy Policy</li>
-              <li>Customer Stories</li>
-            </ul>
-            <div className="mt-6 space-y-2 text-sm text-blue-100">
-              <p>support@docstore.app</p>
-              <p>+33 1 84 80 12 34</p>
+            <div className="mt-6 space-y-2 text-sm">
+              <p>rahim100codeur@gmail.com</p>
+              <p>+228 91 79 61 15</p>
             </div>
           </div>
         </div>
 
-        <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm text-blue-100">
-          <p>© 2026 DocStore. All rights reserved.</p>
+        <div className="mt-12 flex items-center justify-between border-t border-primary/10 pt-6 text-sm text-black-100">
+          <p>© 2026 DocStore. Tous droits réservés.</p>
           <div className="flex items-center gap-4">
-            <span>Follow us</span>
-            <div className="flex items-center gap-3">
-              <span className="h-8 w-8 rounded-full bg-white/10" />
-              <span className="h-8 w-8 rounded-full bg-white/10" />
-              <span className="h-8 w-8 rounded-full bg-white/10" />
-              <span className="h-8 w-8 rounded-full bg-white/10" />
-            </div>
+            <span className="text-primary border-b border-2 p-3 rounded-full hover:bg-primary hover:text-white hover:border-white cursor-pointer transition-all ease-in">
+              Nous suivre
+            </span>
           </div>
         </div>
       </div>

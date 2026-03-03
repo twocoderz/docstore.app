@@ -17,6 +17,9 @@
   --color-background: oklch(100% 0 0);     /* white */
   --color-foreground: oklch(20% 0.02 240);     /* texte principal */
   --color-card: oklch(100% 0 0);
+
+  --footer-white: #f8f9fa;
+
   --color-card-foreground: oklch(20% 0.02 240);
 
   --color-primary: #8837E8;

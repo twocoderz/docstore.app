@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-footer-gradient text-white">
@@ -15,25 +17,36 @@ export default function Footer() {
             Téléchargez DocStore
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-sm text-blue-100 sm:text-base">
-            Centralisez vos documents, collaborez en temps réel et sécurisez vos
-            fichiers en un seul endroit.
+            Valide toutes tes UEs avec Docstore.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
               href="https://docstore-univ.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl bg-black px-5 py-3 text-sm font-semibold text-white shadow-md transition-transform hover:scale-[1.02]"
+              className="transition-transform hover:scale-[1.02]"
             >
-              Google Play
+              <Image
+                src="/images/app-store.svg"
+                alt="Télécharger sur App Store"
+                width={160}
+                height={48}
+                className="w-auto h-10"
+              />
             </a>
             <a
               href="https://docstore-univ.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl bg-black px-5 py-3 text-sm font-semibold text-white shadow-md transition-transform hover:scale-[1.02]"
+              className="transition-transform hover:scale-[1.02]"
             >
-              App Store
+              <Image
+                src="/images/google-play.svg"
+                alt="Télécharger sur Google Play"
+                width={160}
+                height={48}
+                className="w-auto h-10"
+              />
             </a>
           </div>
         </div>

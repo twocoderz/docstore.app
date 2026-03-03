@@ -12,8 +12,10 @@ export default function Footer() {
 
       <div className="relative mx-auto max-w-7xl px-6 pb-14 pt-16 lg:px-8">
         {/* CTA Card */}
-        <div className="mx-auto max-w-4xl rounded-32 bg-primary px-8 py-12 text-center">
-          <p className="text-sm font-semibold text-blue-100">Gagnez du temps</p>
+        <div className="mx-auto max-w-6xl rounded-32 bg-primary px-8 py-12 text-center">
+          <p className="text-sm font-semibold text-blue-100">
+            Tes cours toujours avec toi
+          </p>
           <h2 className="mt-2 text-6xl font-display font-semibold text-white sm:text-4xl">
             Téléchargez DocStore
           </h2>
@@ -69,8 +71,10 @@ export default function Footer() {
               </Link>
             </div>
             <p className="mt-4 text-sm text-left max-w-100 text-black-100">
-              Get the future you want. DocStore vous aide à organiser vos
-              documents pour travailler plus vite, ensemble.
+              DocStore aide les étudiants et candidats à gagner du temps dans
+              leur préparation : moins de recherche, plus de concentration sur
+              l&apos;essentiel — apprendre, s&apos;exercer et réussir les
+              examens.
             </p>
           </div>
 

@@ -1,21 +1,26 @@
+import Image from "next/image";
+
 const testimonials = [
   {
     quote:
       "Depuis DocStore, notre équipe retrouve chaque fichier en quelques secondes. La collaboration est fluide et l’historique évite les erreurs.",
     name: "Moussa Traoré",
     role: "CEO, PageBulb",
+    image: "images/users/user1.jpg",
   },
   {
     quote:
       "Nous avons réduit de 40% le temps passé à chercher des documents. Les permissions granulaires nous ont vraiment aidés.",
     name: "Sarah Kouamé",
     role: "Ops Lead, KiteLab",
+    image: "images/users/user2.webp",
   },
   {
     quote:
       "L’interface est claire, rapide et sécurisée. DocStore est devenu notre source unique de vérité.",
     name: "Yann Ndiaye",
     role: "Head of Product, Orbis",
+    image: "images/users/user3.avif",
   },
 ];
 
@@ -51,6 +56,13 @@ export default function TestimonialSection() {
           </div>
 
           <div className="relative flex justify-center lg:justify-end">
+            <Image
+              src="/images/app-store.svg"
+              alt="Télécharger sur App Store"
+              width={160}
+              height={48}
+              className="w-auto h-10"
+            />
             <div className="absolute -right-6 top-1/2 flex -translate-y-1/2 flex-col gap-2">
               {testimonials.map((_, index) => (
                 <span

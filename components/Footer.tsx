@@ -84,7 +84,7 @@ export default function Footer() {
               <li>Acceuil</li>
               <li>Fonctionnalites</li>
               <li>Comment ca marche</li>
-              <li>Ce que disent les utilisateurs</li>
+              <li>Ce que disent nos utilisateurs</li>
             </ul>
             <div className="mt-6 space-y-2 text-sm">
               <p>rahim100codeur@gmail.com</p>

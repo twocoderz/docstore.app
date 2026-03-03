@@ -57,11 +57,11 @@ export default function TestimonialSection() {
 
           <div className="relative flex justify-center lg:justify-end">
             <Image
-              src="/images/app-store.svg"
+              src="/images/users/user1.jpg"
               alt="Télécharger sur App Store"
               width={160}
               height={48}
-              className="w-auto h-10"
+              className="w-auto h-100"
             />
             <div className="absolute -right-6 top-1/2 flex -translate-y-1/2 flex-col gap-2">
               {testimonials.map((_, index) => (

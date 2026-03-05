@@ -47,12 +47,12 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-10">
+          <div className="hidden lg:flex items-center gap-8 xl:gap-10">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-muted-foreground hover:text-foreground font-medium transition-colors"
+                className="text-muted-foreground hover:text-foreground font-medium transition-colors whitespace-nowrap"
               >
                 {link.name}
               </Link>
@@ -60,12 +60,12 @@ export default function Navbar() {
           </div>
 
           {/* CTA Button - Desktop */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <a
               href="https://docstore-univ.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-full hover:bg-primary/90 transition-all shadow-md hover:shadow-lg active:scale-95"
+              className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-full hover:bg-primary/90 transition-all shadow-md hover:shadow-lg active:scale-95 whitespace-nowrap"
             >
               Télécharger l&apos;app
             </a>
@@ -73,7 +73,7 @@ export default function Navbar() {
 
           {/* Hamburger - Mobile */}
           <button
-            className="md:hidden text-foreground p-2 rounded-lg hover:bg-muted/50 transition-colors"
+            className="lg:hidden text-foreground p-2 rounded-lg hover:bg-muted/50 transition-colors"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -100,7 +100,7 @@ export default function Navbar() {
 
       {/* Mobile Menu - Slide down */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-400 ease-in-out ${
+        className={`lg:hidden overflow-hidden transition-all duration-400 ease-in-out ${
           isOpen ? "max-h-125 opacity-100" : "max-h-0 opacity-0"
         }`}
       >

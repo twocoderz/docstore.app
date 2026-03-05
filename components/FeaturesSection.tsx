@@ -193,7 +193,7 @@ export default function FeaturesSection() {
       className="relative h-screen overflow-hidden bg-background"
     >
       <div className="relative mx-auto h-full max-w-7xl px-6 lg:px-8">
-        <div className="grid h-full items-center gap-12 lg:grid-cols-2">
+        <div className="grid h-full items-center mt-8 gap-12 lg:grid-cols-2">
           {/* Left Column: Fixed Images stack */}
           <div className="relative flex h-full items-center justify-center overflow-hidden">
             <div ref={imagesRef} className="relative h-[80%] w-full">
@@ -222,10 +222,10 @@ export default function FeaturesSection() {
                 key={`text-${feature.id}`}
                 className="feature-content absolute inset-0 flex flex-col justify-center opacity-0"
               >
-                <h2 className="text-3xl font-display font-semibold text-foreground sm:text-4xl">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-semibold text-foreground sm:text-4xl">
                   {feature.title}
                 </h2>
-                <p className="mt-4 text-base text-muted-foreground">
+                <p className="mt-4 text-lg lg:text-xl text-muted-foreground">
                   {feature.description}
                 </p>
 

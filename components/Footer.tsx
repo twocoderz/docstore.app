@@ -81,7 +81,6 @@ export default function Footer() {
             <ul className="mt-4 space-y-3 text-sm text-blue-600">
               <li>Acceuil</li>
               <li>Fonctionnalites</li>
-              <li>Comment ca marche</li>
               <li>Ce que disent nos utilisateurs</li>
             </ul>
             <div className="mt-6 space-y-2 text-sm">

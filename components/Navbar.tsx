@@ -20,7 +20,6 @@ export default function Navbar() {
   const navLinks = [
     { name: "Accueil", href: "#" },
     { name: "Fonctionnalités", href: "#features" },
-    { name: "Comment ça marche", href: "#how-it-works" },
     { name: "Témoignages", href: "#testimonials" },
   ];
 

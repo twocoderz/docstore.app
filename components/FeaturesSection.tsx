@@ -208,7 +208,7 @@ export default function FeaturesSection() {
                     alt={feature.title}
                     width={520}
                     height={520}
-                    className="h-auto w-90 max-w-full"
+                    className="h-auto w-85 max-w-full"
                     priority={i === 0}
                   />
                 </div>

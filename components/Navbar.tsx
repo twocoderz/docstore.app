@@ -37,29 +37,31 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/">
-            <Image
-              src="/logo.svg"
-              alt="DocStore"
-              width={28}
-              height={28}
-              className="h-14 w-14"
-              priority
-            />
-          </Link>
+          <div className="flex items-center gap-12">
+            {/* Logo */}
+            <Link href="/">
+              <Image
+                src="/logo.svg"
+                alt="DocStore"
+                width={28}
+                height={28}
+                className="h-14 w-14"
+                priority
+              />
+            </Link>
 
-          {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center gap-8 xl:gap-10">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="text-muted-foreground hover:text-foreground font-normal text-sm  transition-colors whitespace-nowrap"
-              >
-                {link.name}
-              </Link>
-            ))}
+            {/* Desktop Menu */}
+            <div className="hidden lg:flex items-center gap-8 xl:gap-10">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className="text-muted-foreground hover:text-foreground font-normal text-sm  transition-colors whitespace-nowrap"
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
           </div>
 
           {/* CTA Buttons - Desktop */}

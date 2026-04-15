@@ -65,17 +65,6 @@ export default function Navbar() {
           {/* CTA Buttons - Desktop */}
           <div className="hidden lg:flex items-center gap-3">
             <Button
-              variant="primary"
-              size="sm"
-              onClick={() =>
-                openExternalPage("https://docstore-univ.vercel.app/")
-              }
-              aria-label="Télécharger l'application via Play Store"
-              className="font-semibold"
-            >
-              Télécharger l&apos;app
-            </Button>
-            <Button
               variant="secondary"
               size="sm"
               onClick={() =>
@@ -85,6 +74,17 @@ export default function Navbar() {
               className="font-semibold"
             >
               Version web
+            </Button>
+            <Button
+              variant="primary"
+              size="sm"
+              onClick={() =>
+                openExternalPage("https://docstore-univ.vercel.app/")
+              }
+              aria-label="Télécharger l'application via Play Store"
+              className="font-semibold"
+            >
+              Télécharger l&apos;app
             </Button>
           </div>
 

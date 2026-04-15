@@ -45,7 +45,7 @@ export function Button(props: ButtonProps) {
   const variantClasses =
     variant === "secondary"
       ? "border border-black-80 text-black-80 bg-transparent"
-      : "bg-black-80 text-white border-2 border-white/25";
+      : "bg-black text-white border-2 border-white/25";
 
   const ref = useRef<HTMLButtonElement>(null);
   const rawProgress = useMotionValue(0);

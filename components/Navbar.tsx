@@ -50,14 +50,14 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-muted-foreground hover:text-foreground font-medium transition-colors whitespace-nowrap"
+                className="text-muted-foreground hover:text-foreground font-normal text-sm  transition-colors whitespace-nowrap"
               >
                 {link.name}
               </Link>
             ))}
           </div>
 
-          {/* CTA Button - Desktop */}
+          {/* CTA Buttons - Desktop */}
           <div className="hidden lg:block">
             <a
               href="https://docstore-univ.vercel.app/"

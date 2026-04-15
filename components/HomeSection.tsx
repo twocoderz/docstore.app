@@ -85,7 +85,7 @@ export default function HomeSection() {
               </a>
               <Button
                 variant="secondary"
-                size="sm"
+                size="md"
                 onClick={() =>
                   openExternalPage("https://docstore-univ.vercel.app/")
                 }
@@ -98,7 +98,7 @@ export default function HomeSection() {
 
             <div className="mt-6 mb-4 flex items-center gap-4 text-sm text-muted-foreground">
               <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-primary font-semibold">
-                4.9
+                4.6
               </span>
               <span>Note moyenne sur les stores</span>
             </div>

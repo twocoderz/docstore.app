@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { APP_URL } from "@/lib/content";
+import { APP_URL, WEB_URL } from "@/lib/content";
 
 /**
  * Mobile footer — simplified single-column layout.
@@ -18,12 +18,32 @@ export default function MobileFooter() {
             Tes cours toujours avec toi
           </p>
           <h2 className="mt-2 text-2xl font-display font-semibold text-white">
-            Téléchargez DocStore
+            Commence maintenant sur DocStore
           </h2>
           <p className="mt-2 text-sm text-blue-100">
-            Valide toutes tes UEs avec DocStore.
+            Telecharge l&apos;app ou ouvre la version web en un clic.
           </p>
-          <div className="mt-6 flex flex-wrap justify-center gap-3">
+
+          <div className="mt-6 flex flex-col gap-3">
+            <a
+              href={APP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-primary transition-transform active:scale-95"
+            >
+              Telecharger l&apos;app
+            </a>
+            <a
+              href={WEB_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-full items-center justify-center rounded-full border border-white/70 px-5 py-3 text-sm font-semibold text-white transition-colors active:bg-white active:text-primary"
+            >
+              Version web
+            </a>
+          </div>
+
+          <div className="mt-5 flex flex-wrap justify-center gap-3">
             <a
               href={APP_URL}
               target="_blank"
@@ -32,7 +52,7 @@ export default function MobileFooter() {
             >
               <Image
                 src="/images/app-store.svg"
-                alt="Télécharger sur App Store"
+                alt="Telecharger sur App Store"
                 width={140}
                 height={42}
                 className="h-auto w-32"
@@ -46,7 +66,7 @@ export default function MobileFooter() {
             >
               <Image
                 src="/images/google-play.svg"
-                alt="Télécharger sur Google Play"
+                alt="Telecharger sur Google Play"
                 width={140}
                 height={42}
                 className="h-auto w-32"

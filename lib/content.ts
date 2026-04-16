@@ -5,6 +5,7 @@
 
 export const APP_NAME = "DocStore";
 export const APP_URL = "https://docstore-univ.vercel.app/";
+export const WEB_URL = "https://docstore-univ.vercel.app/";
 
 export const navLinks = [
   { name: "Fonctionnalités", href: "#features" },

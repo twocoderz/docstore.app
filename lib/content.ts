@@ -7,9 +7,7 @@ export const APP_NAME = "DocStore";
 export const APP_URL = "https://docstore-univ.vercel.app/";
 
 export const navLinks = [
-  { name: "Accueil", href: "#" },
   { name: "Fonctionnalités", href: "#features" },
-  { name: "Comment ça marche", href: "#how-it-works" },
   { name: "Témoignages", href: "#testimonials" },
 ] as const;
 
@@ -36,6 +34,7 @@ export const testimonials = [
     name: "Moussa Traoré",
     role: "CEO, PageBulb",
     image: "/images/users/user1.jpg",
+    rating: 5,
   },
   {
     quote:
@@ -43,6 +42,7 @@ export const testimonials = [
     name: "Sarah Kouamé",
     role: "Ops Lead, KiteLab",
     image: "/images/users/user2.jpg",
+    rating: 5,
   },
   {
     quote:
@@ -50,6 +50,7 @@ export const testimonials = [
     name: "Yann Ndiaye",
     role: "Head of Product, Orbis",
     image: "/images/users/user3.jpg",
+    rating: 5,
   },
 ] as const;
 

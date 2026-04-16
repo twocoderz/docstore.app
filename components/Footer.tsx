@@ -4,7 +4,6 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-footer-white text-black">
-
       <div className="relative mx-auto max-w-7xl px-6 pb-14 pt-16 lg:px-8">
         {/* CTA Card */}
         <div className="mx-auto max-w-6xl rounded-32 bg-primary px-8 py-12 text-center">
@@ -75,19 +74,11 @@ export default function Footer() {
 
           <div>
             <p className="text-sm font-semibold">Liens rapides</p>
-            <ul className="mt-4 space-y-3 text-sm text-blue-600">
-              <li>
-                <Link
-                  href="#home"
-                  className="hover:text-blue-800 transition-colors"
-                >
-                  Accueil
-                </Link>
-              </li>
+            <ul className="mt-4 space-y-3 text-sm text-black/50">
               <li>
                 <Link
                   href="#features"
-                  className="hover:text-blue-800 transition-colors"
+                  className="hover:text-black transition-colors"
                 >
                   Fonctionnalités
                 </Link>
@@ -95,15 +86,15 @@ export default function Footer() {
               <li>
                 <Link
                   href="#testimonials"
-                  className="hover:text-blue-800 transition-colors"
+                  className="hover:text-black transition-colors"
                 >
                   Ce que disent nos utilisateurs
                 </Link>
               </li>
             </ul>
-            <div className="mt-6 space-y-2 text-sm">
-              <p>rahim100codeur@gmail.com</p>
-              <p>+228 91 79 61 15</p>
+            <div className="mt-6 space-y-2 text-sm text-black/50">
+              <p className="hover:text-black">+228 91 79 61 15</p>
+              <p className="hover:text-black">rahim100codeur@gmail.com</p>
             </div>
           </div>
         </div>
